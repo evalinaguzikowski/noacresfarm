@@ -113,11 +113,6 @@
         justify-content: center;
         gap: 12px;
     }
-    
-    .photo-row {
-        flex-wrap: wrap;
-        item-align: center;
-    }
 
     .produce-img {
     width: 300px;
