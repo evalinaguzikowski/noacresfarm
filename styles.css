@@ -91,13 +91,23 @@
  
     .header-title {
         padding-right: 0;
-        font-size: 18px;
+        font-size: 25px;
     }
  
     .header-nav {
         flex-wrap: wrap;
         justify-content: center;
         gap: 12px;
+    }
+
+    .produce-img {
+    width: 300px;
+    height: auto;
+    display: block;
+    margin: 0
+    border-radius: 8px;
+    border: 5px solid #3f853e;
+    float: none;
     }
     
     .photo-row {
