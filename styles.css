@@ -110,6 +110,7 @@
     
     .photo-row {
         flex-wrap: wrap;
+        item-align: center;
     }
 
     .produce-img {
