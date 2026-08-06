@@ -39,6 +39,24 @@
 .header-title{
     margin: 0; font-size: 50px;
 }
+
+.header-nav {
+    display: flex;
+    gap: 30px;
+}
+ 
+.nav-link {
+    text-decoration: none;
+    color: inherit;
+}
+ 
+.nav-text {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 200;
+    color: whitesmoke;
+    text-decoration: none;
+}
  
 /* ===== Produce Stand Image ===== */
 .produce-img {
