@@ -1,50 +1,52 @@
 <!DOCTYPE html>  <!-- specifies document type -->
 <html lang = "en"> <!--specifies language of the document-->
 <head> <!-- contains metadata about the document -->
-    <meta charset = "UTF-8"/> <!-- specifies character encoding for the document -->
-    <meta name = "viewport" content = "width=device-width, initial-scale=1.0"> <!-- sets the viewport to make the website look good on all devices -->
-    <title>No Acres Farm</title> <!-- specifies the title of the document, which is displayed in the browser's title bar or tab -->
-</head>
-<body style="
-    background-color: #ffffff;
-    font-family: 'Helvetica', sans-serif;
-    margin: 0;
-    font-size: 15px;
-    "
-    >
+    <meta charset = "UTF-8"/> <!-- specifies character encoding for the document -->    
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0"> <!-- sets the viewport to make the website look good on all devices -->    
+    <title>No Acres Farm</title> <!-- specifies the title of the document, which is displayed in the browser's title bar or tab -->    
+    <meta name="description" content="No Acres Farm is a small, family-owned farm in Pennington, NJ offering fresh, organic, sustainably grown produce at our farm stand.">    
+    <link rel="stylesheet" href="styles.css"> <!-- links to an external CSS file for styling the document -->
+</head> 
 
-    <footer
-        style="
-            top: 0;
-            width: 100%;
-            padding: 30px 40px;
-            background-color: #e8eee8;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            box-sizing: border-box;
+<body style="    
+    background-color: #ffffff;
+    font-family: 'Helvetica', sans-serif;  
+    margin: 0;   
+    "    
+    >     
+    
+    <header        
+    style="            
+        top: 0;            
+        width: 100%;
+        padding: 30px 40px;            
+        background-color: #e8eee8;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-sizing: border-box;
         "
         >
-
+        
         <h1 style="margin: 0; font-size: 50px;">No Acres Farm</h1>
-        <h3 style="margin: 0; font-size: 25px;">About Us</h3>
-        <h3 style="margin: 0; font-size: 25px;">Available Produce</h3>
-        <h3 style="margin: 0; font-size: 25px;">Contact Information</h3>
-
-    </footer>
-
-    <div style="
+            <a class="nav-link" href="#about"><h3 style="margin: 0; font-size: 25px;">About Us</h3></a>
+            <a class="nav-link" href="#produce"><h3 style="margin: 0; font-size: 25px;">Available Produce</h3></a>
+            <a class="nav-link" href="#contact"><h3 style="margin: 0; font-size: 25px;">Contact Information</h3></a>
+    </header>
+   
+    <div class="photo-row"
+        style="
             margin-top: 60px;
-            display: flex; 
-            gap: 3px; 
-            justify-content: center;"
-        >
-        <img src="noacresfarm_image1.jpg" alt="Photo 1" style="width: 400px; height: auto;">
-        <img src="noacresfarm_image2.jpg" alt="Photo 2" style="width: 400px; height: auto;">
-        <img src="noacresfarm_image3.jpg" alt="Photo 3" style="width: 400px; height: auto;">
+            display: flex;
+            gap: 3px;
+            justify-content: center;
+            " 
+            >
+        <img src="noacresfarm_image1.jpg" alt="mail box" style="width: 400px; height: auto;">
+        <img src="noacresfarm_image2.jpg" alt="Produce" style="width: 400px; height: auto;">
+       <img src="noacresfarm_image3.jpg" alt="Honey Price" style="width: 400px; height: auto;">
     </div>
 
-        
     <h1
         style="
             color: #3f853e;
@@ -53,9 +55,9 @@
             text-align: center;
             margin: 40px 0 0 0;
             line-height: 1.3;
-        "
-        >
-            Welcome To 
+            "
+    >
+        Welcome to
         <br>
         <span style="font-size: 80px;">No Acres Farm</span>
     </h1>
@@ -66,125 +68,107 @@
         <div style="flex: 1; border-bottom: 3px solid #3f853e70;"></div>
     </div>
 
-    <!--About Us-->
+        <!--About Us-->
     <h3
-        style="
-            font-size: 50px;
-            margin: 20px;
-            color: #3f843e;
-        "
+        id="about"
+        class="section-heading"
     >
         About Us
     </h3>
 
     <p
-        style="
-            font-size: 20px;
-            margin: 20px;
-            color: #000000;
-            line-height: 1.6;
-        "
-    >
+        class="body-text"
+        >
         No Acres Farm is a small, family-owned farm located in Pennington NJ. We specialize in growing a variety of fresh, organic produce that is available for purchase at our farm stand. Our commitment to sustainable farming practices ensures that our fruits and vegetables are not only delicious but also environmentally friendly. Come visit us and experience the taste of farm-fresh goodness!
         <br><br>
-        <Strong>Location:</Strong> 1639 Reed Rd Pennington, New Jersey
+        <strong>Location:</strong> 1639 Reed Rd Pennington, New Jersey
         <br>
-        <Strong>Hours:</Strong> unknown
+        <strong>Hours:</strong> unknown
         <br>
-        <Strong>Owners:</Strong> Sophia & George Guzikowski
+        <strong>Farmers:</strong> George & Sophie Guzikowski
     </p>
-
+    
     <br>
-
+    
     <!--Available Produce-->
     <h3
-        style="
-            font-size: 50px;
-            margin: 20px;
-            color: #3f853e;
-        "
-    >
-        Available Produce
+        id="produce"
+        class="section-heading"
+        > 
+            Available Produce
     </h3>
 
-    <img src="noacresfarm_foodstand_placeholder.png" 
-        alt="Food Stand Image" 
-        style="
-            width: 300px; 
-            height: auto; 
-            display: block; 
-            margin: 0px 30px 40px;
-            float: right;
-            "
+    <img src="noacresfarmstand.jpg"        
+        alt="Food stand at No Acres Farm displaying produce for sale" 
+        class="produce-img"
     >
 
     <p
-        style="
-            font-size: 20px;
-            margin: 20px;
-            color: #000000;
-            line-height: 1.6;
-        "
-    >
-        Our available produce is dependent on the season and what is currently being harvested. We offer a wide variety of fruits and vegetables, including tomatoes, cucumbers, peppers, squash, berries, and more. Please check our farm stand for the most up-to-date information on what is currently available.
-        <br> <br>
-        <span style="line-height: 2; font-size: 25px;">Available Produce Per Season:</span>
-        <br>
-        <Strong>Spring:</Strong> Unknown
-        <br>
-        <Strong>Summer:</Strong> Unknown
-        <br>
-        <Strong>Fall:</Strong> Unknown
+        class="body-text"
+        >
+            Our available produce is dependent on the season and what is currently being harvested. We offer a wide variety of fruits and vegetables, including tomatoes, cucumbers, peppers, squash, berries, and more. Please check our farm stand for the most up-to-date information on what is currently available.
+            <br> <br>
+            <span style="line-height: 2; font-size: 25px;">Available Produce Per Season:</span>
+            <br>
+            <strong>Spring:</strong> Unknown
+            <br>
+            <strong>Summer:</strong> Unknown    
+            <br>
+            <strong>Fall:</strong> Unknown                                    
     </p>
-
 
     <!--Contact Information-->
     <h3
-        style="
-            font-size: 50px;
-            margin: 20px;
-            color: #3f853e;
-            clear: both;
-            padding-top: 40px;
-        "
-    >
-        Contact Information
+        id="contact"
+        class="section-heading"
+        style="clear: both; padding-top: 40px;"
+        >
+            Contact Information
     </h3>
 
-    <div style="display: flex; gap: 20px; justify-content: center;">
-        <div style="background: #e8eee8; padding: 20px; border-radius: 8px; text-align: center; width: 180px;">
-            <p style="font-size: 30px; margin: 0;">📞</p>
-            <p style="margin: 10px 0 0;">(609) 731-5261</p>
-        </div>
-        <div style="background: #e8eee8; padding: 22px; border-radius: 8px; text-align: center; width: 180px;">
-            <p style="font-size: 30px; margin: 0;">
-                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
-                </svg>
-            </p>
-            <p style="margin: 10px 0 0;">unknown</p>
-        </div>
-        <div style="background: #e8eee8; padding: 20px; border-radius: 8px; text-align: center; width: 180px;">
-            <p style="font-size: 30px; margin: 0;">📍</p>
-            <p style="margin: 10px 0 0;">1639 Reed Rd Pennington, New Jersey</p>
-        </div>
+    <div class="contact-row" style="display: flex; gap: 20px; justify-content: center;">
+            <div class="contact-card" style="background: #e8eee8; padding: 20px; border-radius: 8px; width: 180px; min-height: 140px; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 8px;">
+                <p style="font-size: 30px; margin: 0;">📞</p>  
+                <a href="tel:+16097315261" style="text-decoration: none; color: inherit;">
+                    <p style="margin: 0;">(609) 731-5261</p>
+                </a>
+            </div>
+
+            <div class="contact-card" style="background: #e8eee8; padding: 22px; border-radius: 8px; width: 180px; min-height: 140px; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 8px;">
+                <p style="font-size: 30px; margin: 0;">
+                    <a href="#" target="_blank" rel="noopener noreferrer" aria-label="No Acres Farm on Instagram" style="color: inherit;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                        </svg>
+                    </a>
+                </p>
+                <p style="margin: 0;">unknown</p>    
+            </div>
+
+            <div class="contact-card" style="background: #e8eee8; padding: 20px; border-radius: 8px; width: 180px; min-height: 140px; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 8px;">
+                <p style="font-size: 30px; margin: 0;">📍</p>
+                <a href="https://www.google.com/maps/search/?api=1&query=1639+Reed+Rd+Pennington+NJ" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;">
+                    <address style="font-style: normal; margin: 0;">1639 Reed Rd Pennington, New Jersey</address>
+                </a>
+            </div>
     </div>
 
     <br><br>
 
-    <section style="
-        background: #3f853e;
-            width: 100%;
-            padding: 20px 10px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            box-sizing: border-box;
-        "
+    <footer style="        
+        background: #3f853e;            
+        width: 100%;            
+        padding: 20px 10px;            
+        display: flex;            
+        justify-content: space-between;            
+        align-items: center;            
+        box-sizing: border-box;            
+        color: #ffffff;        
+        "        
         >
-        <div class="container"> &copy No Acres Farm </div>
-        <div class="container"> Designed by Evalina Guzikowski </div>
-    </section>
+            <div class="container">&copy; No Acres Farm</div>
+            <div class="container">Designed by Evalina Guzikowski</div>
+    </footer>
 
 </body>
 </html>
