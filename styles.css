@@ -80,14 +80,22 @@
 /* ===== Small screens ===== */
 @media (max-width: 768px) {
     .section-heading {
-    font-size: 30px;
-    top: 0;
-    width: 100%;
-    padding: 15px;
-    background-color: #e8eee8;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+        flex-direction: column;
+        gap: 12px;
+        padding: 15px;
+        position: static;
+        text-align: center;
+    }
+ 
+    .header-title {
+        padding-right: 0;
+        font-size: 18px;
+    }
+ 
+    .header-nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
     }
     
     .photo-row {
