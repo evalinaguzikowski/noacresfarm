@@ -64,6 +64,17 @@
  
 /* ===== Small screens ===== */
 @media (max-width: 768px) {
+    .section-heading {
+    font-size: 30px;
+    top: 0;
+    width: 100%;
+    padding: 15px;
+    background-color: #e8eee8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    
     .photo-row {
         flex-wrap: wrap;
     }
