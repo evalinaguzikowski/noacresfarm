@@ -35,6 +35,10 @@
     align-items: center;
     box-sizing: border-box;
 }
+
+.header-title{
+    margin: 0; font-size: 50px;
+}
  
 /* ===== Produce Stand Image ===== */
 .produce-img {
