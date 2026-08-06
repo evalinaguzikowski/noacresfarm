@@ -127,7 +127,7 @@ html {
     .produce-img {
         width: 300px;
         margin: 0;
-        item-align: center;
+        align-items: center;
     }
  
     .contact-row {
