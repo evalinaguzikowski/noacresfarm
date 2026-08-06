@@ -28,7 +28,8 @@
     font-size: 40px;
     top: 0;
     width: 100%;
-    padding: 30px 40px;
+    padding: 3px 30px;
+    width: 100vw;
     background-color: #e8eee8;
     display: flex;
     justify-content: space-between;
