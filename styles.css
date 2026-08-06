@@ -17,7 +17,7 @@
     font-size: 40px;
     top: 0;
     width: 100%;
-    padding: 3px 30px;
+    padding: 20px 30px;
     width: 100vw;
     background-color: #e8eee8;
     display: flex;
@@ -27,7 +27,8 @@
 }
 
 .header-title{
-    margin: 0; font-size: 50px;
+    margin: 0; 
+    font-size: 50px;
 }
 
 .header-nav {
@@ -37,6 +38,7 @@
  
 .nav-link {
     text-decoration: none;
+    color: inherit;
     transition: color 0.2s ease;
 }
  
