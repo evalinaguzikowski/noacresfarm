@@ -60,6 +60,12 @@
     gap: 3px;
     justify-content: center;
 }
+
+.photo-row img {
+    width: 30%;
+    max-width: 100%;
+    height: auto;
+}
  
 /* ===== Produce Stand Image ===== */
 .produce-img {
